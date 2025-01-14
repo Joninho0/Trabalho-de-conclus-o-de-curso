@@ -1,0 +1,231 @@
+/* Estilos para Clareamento Dental */
+
+/* Corpo */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo da Navbar */
+.navbar {
+    background-color: #005eb4; /* Azul escuro */
+    padding: 15px 30px; /* Ajuste de padding para maior leveza */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin: 0 20px; /* Espaçamento mais uniforme */
+}
+
+/* Estilo do logotipo */
+.navbar .logo h1 {
+    color: #ffffff;
+    font-size: 28px; /* Tamanho do logotipo aumentado */
+    margin: 0;
+    font-weight: bold; /* Negrito para destaque */
+}
+
+/* Estilo dos links */
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 10px; /* Adiciona espaço ao redor dos links */
+}
+
+/* Hover dos links */
+.navbar .nav-link:hover {
+    color: #0b4ba0 !important;
+    background-color: rgba(255, 255, 255, 0.1); /* Leve fundo ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas para os links */
+}
+
+/* Estilo dos botões */
+.btn-login,
+.btn-agendamento {
+    background-color: #ffffff;
+    color: #005eb4;
+    border: none;
+    padding: 10px 20px; /* Ajuste no padding */
+    font-size: 16px;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover dos botões */
+.btn-login:hover,
+.btn-agendamento:hover {
+    background-color: #0d6ce9;
+    color: #ffffff;
+    transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+}
+
+.btn-agendamento {
+    margin-left: 15px;
+}
+
+/* Seção de Introdução */
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #023e8a;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Benefícios */
+.benefits h2, h5{
+    color: #023e8a;
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+.benefits .card {
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.benefits .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefits .card .fa {
+    color: #0096c7;
+    margin-bottom: 20px;
+}
+
+/* FAQ */
+.faq h2 {
+    color: #023e8a;
+    margin-bottom: 30px;
+}
+
+.accordion .card-header {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.accordion .btn-link {
+    color: #023e8a;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.accordion .btn-link:hover {
+    color: #0077b6;
+}
+
+/* Avaliações */
+.reviews h2 {
+    color: #023e8a;
+    margin-bottom: 40px;
+}
+
+blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #023e8a;
+    padding-left: 15px;
+}
+
+blockquote .blockquote-footer {
+    color: #023e8a;
+    font-weight: bold;
+}
+/* Estilos Gerais do Rodapé */
+.footer {
+    background-color: #023e8a;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ffffff !important;
+  }
+  
+  .footer-section p,
+  .footer-section ul,
+  .footer-section-links {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #ffffff; /* Forçando a cor branca */
+  }
+  
+  .footer-section ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #ffffff; /* Forçando a cor branca nos itens da lista */
+  }
+  
+  .footer-section ul li i {
+    color: #ffffff !important; /* Forçando a cor branca nos ícones */
+  }
+  
+  .footer-section a {
+    color: #ffffff !important; /* Forçando a cor branca nos links */
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline; /* Efeito hover nos links */
+  }
+  
+  .footer-bottom {
+    background-color: #022d6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+/* Responsividade */
+@media (max-width: 768px) {
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .benefits .card {
+        margin-bottom: 20px;
+    }
+}

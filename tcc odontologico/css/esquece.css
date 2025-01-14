@@ -1,0 +1,169 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos do body */
+body {
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #000;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container centralizado para o formulário */
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 50px auto;
+}
+
+/* Títulos e texto do formulário */
+h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels e inputs do formulário */
+label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px; /* Espaço para o botão de olho à esquerda */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo do ícone de olho */
+.toggle-password {
+    position: absolute;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    padding: 0;
+}
+
+/* Botão de redefinir senha */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagens de feedback */
+.feedback {
+    font-size: 14px;
+    color: #28a745;
+    margin-top: 10px;
+    display: none;
+}
+
+.error {
+    color: #dc3545;
+}
+
+/* Estilos Gerais do Rodapé */
+.footer {
+    background-color: #023e8a;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ffffff !important;
+  }
+  
+  .footer-section p,
+  .footer-section ul,
+  .footer-section-links {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #ffffff; /* Forçando a cor branca */
+  }
+  
+  .footer-section ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #ffffff; /* Forçando a cor branca nos itens da lista */
+  }
+  
+  .footer-section ul li i {
+    color: #ffffff !important; /* Forçando a cor branca nos ícones */
+  }
+  
+  .footer-section a {
+    color: #ffffff !important; /* Forçando a cor branca nos links */
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline; /* Efeito hover nos links */
+  }
+  
+  .footer-bottom {
+    background-color: #022d6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+  }

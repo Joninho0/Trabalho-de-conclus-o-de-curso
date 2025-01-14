@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Clinica do Sorriso</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/agendamento.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://wa.me/5511964599710?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+  </a>
+</head>
+<body>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <h1>Clínica do Sorriso</h1>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <!-- Centralizar os links -->
+      <ul class="navbar-nav mx-auto"> <!-- mx-auto centraliza o conteúdo -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="inicio.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Pagina inicial
+          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+
+      <!-- Botão de login à direita -->
+      <button class="btn btn-login" onclick="window.location.href='login.php'">
+       Login
+      </button>
+    </div>
+  </div>
+</nav>
+
+    
+        <!-- Seção de Agendamento de Consultas -->
+        <section id="agendamento" style="background-color: #f4f4f4; padding: 50px 20px; text-align: center;">
+          <div class="container">
+            <h2 style="color: #023e8a; font-size: 2.5rem; margin-bottom: 30px;">Agende Sua Consulta</h2>
+            <p style="font-size: 1.2rem; color: #333; margin-bottom: 40px;">Preencha o formulário abaixo para agendar
+              sua consulta de forma rápida e fácil.</p>
+
+            <form action="https://formsubmit.co/tcc.odontologico@gmail.com" method="POST" style="max-width: 600px; margin: 0 auto; text-align: left;">
+              <!-- Nome Completo -->
+              <div class="form-group">
+                <label for="nome" style="font-size: 1.1rem; color: #333;">Nome Completo</label>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo"
+                  required style="padding: 15px; font-size: 1rem; border-radius: 5px;">
+              </div>
+
+              <!-- E-mail -->
+              <div class="form-group">
+                <label for="email" style="font-size: 1.1rem; color: #333;">E-mail</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail"
+                  required style="padding: 15px; font-size: 1rem; border-radius: 5px;">
+              </div>
+
+              <!-- Telefone -->
+              <div class="form-group">
+                <label for="telefone" style="font-size: 1.1rem; color: #333;">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="Digite seu telefone"
+                  required style="padding: 15px; font-size: 1rem; border-radius: 5px;">
+              </div>
+
+              <!-- Data da Consulta -->
+              <div class="form-group">
+                <label for="data" style="font-size: 1.1rem; color: #333;">Data da Consulta</label>
+                <input type="date" id="data" name="data" class="form-control" required
+                  style="padding: 15px; font-size: 1rem; border-radius: 5px;">
+              </div>
+
+              <!-- Hora da Consulta -->
+              <div class="form-group">
+                <label for="hora" style="font-size: 1.1rem; color: #333;">Hora da Consulta</label>
+                <input type="time" id="hora" name="hora" class="form-control" required
+                  style="padding: 15px; font-size: 1rem; border-radius: 5px;">
+              </div>
+
+              <!-- Mensagem -->
+              <div class="form-group">
+                <label for="mensagem" style="font-size: 1.1rem; color: #333;">Mensagem (opcional)</label>
+                <textarea id="mensagem" name="mensagem" class="form-control" rows="4"
+                  placeholder="Deixe uma mensagem ou observações (opcional)"
+                  style="padding: 15px; font-size: 1rem; border-radius: 5px;"></textarea>
+              </div>
+
+              <!-- Botão de Envio -->
+              <div style="text-align: center; margin-top: 30px;">
+                <button type="submit" class="btn btn-agendar"
+                  style="background-color: #023e8a; color: white; padding: 15px 30px; border-radius: 30px; font-size: 1.2rem; border: none; cursor: pointer;">
+                  Agendar Consulta
+                </button>
+              </div>
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+          </div>
+        </section>
+  
+<!-- Rodapé -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>Clínica do Sorriso</h3>
+      <p>
+        A Clínica do Sorriso é referência em odontologia moderna, oferecendo tratamentos personalizados e de alta
+        qualidade. Nosso compromisso é com o seu sorriso e bem-estar.
+      </p>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <li><a href="inicio.html">Início</a></li>
+        <li><a href="#agendar-consulta">Agendar Consulta</a></li>
+        <li><a href="sobre-nos.html">Sobre nós</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h3>Contato</h3>
+      <ul>
+        <li>(11) 96459-9710</li>
+        <li>contato@clinicadosorriso.com</li>
+        <li>Rua dos Sorrisos, 100, São Paulo - SP</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Clínica do Sorriso. Todos os direitos reservados.</p>
+  </div>
+</footer>
+  
+</body>
+</html>

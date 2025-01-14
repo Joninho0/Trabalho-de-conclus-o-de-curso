@@ -1,0 +1,236 @@
+/* Estilos Gerais */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo leve */
+}
+
+
+
+/* Estilo da Navbar */
+.navbar {
+    background-color: #005eb4; /* Azul escuro */
+    padding: 20px 50px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin: 0 15px;
+}
+
+/* Estilo do logotipo */
+.navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo dos links */
+.navbar .nav-link {
+    color: white !important; /* Cor branca para "Tratamento", "Sobre Nós" e "Contato" */
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover dos links */
+.navbar .nav-link:hover {
+    color: #0b4ba0 !important; 
+    
+}
+
+/* Estilo dos botões */
+.btn-login, .btn-agendamento {
+    background-color: #fff; /* Fundo branco */
+    color: #005eb4; /* Texto azul escuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover dos botões */
+.btn-login:hover, .btn-agendamento:hover {
+    background-color: #0d6ce9; /* Fundo azul mais escuro */
+    color: white; /* Letra branca ao passar o mouse */
+}
+
+.btn-agendamento {
+    background-color: #fff; /* Fundo branco */
+    color: #005eb4; /* Texto azul escuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 15px; /* Espaçamento entre os botões */
+}
+
+
+h2, p {
+    margin: 0;
+}
+
+/* Seção de Agendamento */
+#agendamento {
+    background-color: #f4f4f4; /* Cor de fundo da seção */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#agendamento h2 {
+    color: #023e8a; /* Azul escuro */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#agendamento p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilo do Formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário */
+    text-align: left;
+    background: white; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+/* Estilo dos Grupos de Formulários */
+.form-group {
+    margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+/* Estilo dos Labels */
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Estilo dos Inputs e Textarea */
+.form-control {
+    width: 100%; /* Largura total */
+    padding: 15px; /* Padding interno */
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Efeito suave na borda */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+/* Foco no input */
+.form-control:focus {
+    border-color: #023e8a; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo do Botão de Envio */
+.btn {
+    background-color: #023e8a; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 15px 30px; /* Padding do botão */
+    border-radius: 30px; /* Bordas arredondadas */
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efeito suave ao passar o mouse */
+    display: inline-block; /* Para garantir que o botão não ocupe toda a largura */
+}
+
+/* Efeito hover do botão */
+.btn:hover {
+    background-color: #0b4ba0; /* Cor de fundo ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #agendamento h2 {
+        font-size: 2rem; /* Tamanho do título em telas menores */
+    }
+
+    #agendamento p {
+        font-size: 1rem; /* Tamanho do texto em telas menores */
+    }
+    
+    .form-control {
+        font-size: 0.9rem; /* Tamanho do texto dos inputs em telas menores */
+    }
+
+    .btn {
+        font-size: 1rem; /* Tamanho do botão em telas menores */
+    }
+}
+/* Estilos Gerais do Rodapé */
+.footer {
+    background-color: #023e8a;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ffffff !important;
+  }
+  
+  .footer-section p,
+  .footer-section ul,
+  .footer-section-links {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #ffffff; /* Forçando a cor branca */
+  }
+  
+  .footer-section ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #ffffff; /* Forçando a cor branca nos itens da lista */
+  }
+  
+  .footer-section ul li i {
+    color: #ffffff !important; /* Forçando a cor branca nos ícones */
+  }
+  
+  .footer-section a {
+    color: #ffffff !important; /* Forçando a cor branca nos links */
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline; /* Efeito hover nos links */
+  }
+  
+  .footer-bottom {
+    background-color: #022d6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+  }

@@ -1,0 +1,209 @@
+/* Geral */
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+/* Estilo da Navbar */
+.navbar {
+  background-color: #005eb4; /* Azul escuro */
+  padding: 15px 30px; /* Ajuste de padding para maior leveza */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav li {
+  margin: 0 20px; /* Espaçamento mais uniforme */
+}
+
+/* Estilo do logotipo */
+.navbar .logo h1 {
+  color: #ffffff;
+  font-size: 28px; /* Tamanho do logotipo aumentado */
+  margin: 0;
+  font-weight: bold; /* Negrito para destaque */
+}
+
+/* Estilo dos links */
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 5px 10px; /* Adiciona espaço ao redor dos links */
+}
+
+/* Hover dos links */
+.navbar .nav-link:hover {
+  color: #0b4ba0 !important;
+  background-color: rgba(255, 255, 255, 0.1); /* Leve fundo ao passar o mouse */
+  border-radius: 5px; /* Bordas arredondadas para os links */
+}
+
+/* Estilo dos botões */
+.btn-login,
+.btn-agendamento {
+  background-color: #ffffff;
+  color: #005eb4;
+  border: none;
+  padding: 10px 20px; /* Ajuste no padding */
+  font-size: 16px;
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover dos botões */
+.btn-login:hover,
+.btn-agendamento:hover {
+  background-color: #0d6ce9;
+  color: #ffffff;
+  transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+}
+
+.btn-agendamento {
+  margin-left: 15px;
+}
+/* Responsividade para a seção de introdução */
+.intro {
+  padding: 30px 60px;
+  background-color: #f4f4f4;
+  text-align: justify;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Seção de Tratamentos */
+.tipos-tratamento h3,
+.tipos-tratamento h4 {
+  font-size: 2.5rem;
+  color: #023e8a;
+  text-align: center;
+}
+
+.tipos-tratamento p {
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Estilo do Banner */
+.banner {
+  width: 100%; /* O banner ocupa toda a largura da tela */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
+/* Tamanho específico para imagens */
+img {
+  width: 250px; /* Largura de 250px */
+  height: 250px; /* Altura de 250px */
+  object-fit: cover; /* Corta o excesso da imagem, se necessário */
+  border-radius: 5px;
+}
+
+/* Estilos Gerais do Rodapé */
+.footer {
+  background-color: #023e8a;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ffffff !important;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section-links {
+  font-size: 1em;
+  line-height: 1.8;
+  color: #ffffff; /* Forçando a cor branca */
+}
+
+.footer-section ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  color: #ffffff; /* Forçando a cor branca nos itens da lista */
+}
+
+.footer-section ul li i {
+  color: #ffffff !important; /* Forçando a cor branca nos ícones */
+}
+
+.footer-section a {
+  color: #ffffff !important; /* Forçando a cor branca nos links */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline; /* Efeito hover nos links */
+}
+
+.footer-bottom {
+  background-color: #022d6e;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* Botão Flutuante do WhatsApp */
+a[href^="https://wa.me/"] {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+a[href^="https://wa.me/"]:hover {
+  transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+}

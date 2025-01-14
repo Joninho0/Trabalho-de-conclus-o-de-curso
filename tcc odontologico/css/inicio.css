@@ -1,0 +1,378 @@
+/* Geral */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo da Navbar */
+.navbar {
+    background-color: #005eb4; /* Azul escuro */
+    padding: 20px 50px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin: 0 15px;
+}
+
+/* Estilo do logotipo */
+.navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo dos links */
+.navbar .nav-link {
+    color: white !important; /* Cor branca para "Tratamento", "Sobre Nós" e "Contato" */
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover dos links */
+.navbar .nav-link:hover {
+    color: #0b4ba0 !important; 
+    
+}
+/* Estilo dos botões */
+.btn-login, .btn-agendamento {
+    background-color: #fff; /* Fundo branco */
+    color: #005eb4; /* Texto azul escuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover dos botões */
+.btn-login:hover, .btn-agendamento:hover {
+    background-color: #0d6ce9; /* Fundo azul mais escuro */
+    color: white; /* Letra branca ao passar o mouse */
+}
+
+.btn-agendamento {
+    background-color: #fff; /* Fundo branco */
+    color: #005eb4; /* Texto azul escuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 15px; /* Espaçamento entre os botões */
+}
+
+
+/* Responsividade para a seção de introdução */
+.intro {
+    padding: 30px 110px;
+    background-color: #f4f4f4;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+
+/* Seção de Tratamentos */
+#tratamentos {
+    margin: 2rem 0;
+}
+
+#tratamentos h2 {
+    font-size: 2.5rem;
+    color: #023e8a;
+}
+
+#tratamentos p {
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Seção Sobre Nós */
+.sobre-nos {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Usando Flexbox para alinhar o texto e a imagem lado a lado */
+.sobre-nos .content {
+    display: flex;
+    justify-content: space-between; /* Espaço entre texto e imagem */
+    align-items: center; /* Alinha o texto e a imagem verticalmente */
+}
+
+.sobre-nos .text {
+    width: 60%; /* Largura reservada para o texto */
+}
+
+.sobre-nos .image {
+    width: 35%; /* Largura reservada para a imagem */
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+}
+
+.sobre-nos h2 {
+    font-size: 2.5em;
+    color: #0077b6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sobre-nos h3 {
+    font-size: 1.8em;
+    color: #023e8a;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #0077b6;
+}
+
+.sobre-nos p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.p {
+    width: 60%;
+}
+
+/* Visão e Valores */
+.vision-values h2 {
+    color: #023e8a;
+    margin-bottom: 30px;
+}
+
+.vision-values p {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+/* Diferenciais */
+.accordion .card-header {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.accordion .btn-link {
+    color: #023e8a;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.accordion .btn-link:hover {
+    color: #0077b6;
+}
+
+/* Suporte ao conteúdo adicional */
+.accordion .card-body {
+    font-size: 1rem;
+    color: #000;
+}
+
+/* Blockquotes - Se houver */
+blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #000;
+    border-left: 5px solid #023e8a;
+    padding-left: 15px;
+}
+
+blockquote .blockquote-footer {
+    color: #023e8a;
+    font-weight: bold;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-nos img {
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+        width: 100%;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+/* Estilizando os Cards */
+.card {
+    border: 1px solid #D7D7DA;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #023e8a;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333333;
+    min-height: 100px;
+    text-align: justify;
+}
+/* Estilos Gerais do Rodapé */
+.footer {
+    background-color: #023e8a;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ffffff !important;
+  }
+  
+  .footer-section p,
+  .footer-section ul,
+  .footer-section-links {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #ffffff; /* Forçando a cor branca */
+  }
+  
+  .footer-section ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #ffffff; /* Forçando a cor branca nos itens da lista */
+  }
+  
+  .footer-section ul li i {
+    color: #ffffff !important; /* Forçando a cor branca nos ícones */
+  }
+  
+  .footer-section a {
+    color: #ffffff !important; /* Forçando a cor branca nos links */
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline; /* Efeito hover nos links */
+  }
+  
+  .footer-bottom {
+    background-color: #022d6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+/* Botão Flutuante do WhatsApp */
+a[href^="https://wa.me/"] {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+a[href^="https://wa.me/"] i {
+    margin-top: 16px;
+}
